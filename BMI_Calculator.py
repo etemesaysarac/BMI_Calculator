@@ -29,22 +29,22 @@ def button_clicked():
 
     BKI = (a/((b*b)*0.01**2))
     if BKI <= 18.5:
-        label3 = Label(window,text='According to Your Data: \nHeight = {}, Weight = {} ve BKI = {}'.format(b,a, BKI))
+        label3 = Label(window,text='According to Your Data: \nHeight = {}, Weight = {} ve BKI = {}'.format(b,a, round(BKI,2)))
         answer.config(text='Thin')
         label3.pack()
 
     elif 18.5 < BKI <= 25:
-        label4 = Label(window,text='According to Your Data: \nHeight = {}, Weight = {} ve BKI = {}'.format(b,a, BKI))
+        label4 = Label(window,text='According to Your Data: \nHeight = {}, Weight = {} ve BKI = {}'.format(b,a, round(BKI,2)))
         answer.config(text='Normal')
         label4.pack()
 
     elif 25 < BKI <= 30:
-        label5 = Label(window,text='According to Your Data: \nHeight = {}, Weight = {} ve BKI = {}'.format(b,a, BKI))
+        label5 = Label(window,text='According to Your Data: \nHeight = {}, Weight = {} ve BKI = {}'.format(b,a, round(BKI,2)))
         answer.config(text='Over Weight!')
         label5.pack()
 
     elif BKI > 30:
-        label6 = Label(window,text='According to Your Data: \nHeight = {}, Weight = {} ve BKI = {}'.format(b,a, BKI))
+        label6 = Label(window,text='According to Your Data: \nHeight = {}, Weight = {} ve BKI = {}'.format(b,a, round(BKI,2)))
         answer.config(text='Go to Doctor!!!')
         label6.pack()
 
