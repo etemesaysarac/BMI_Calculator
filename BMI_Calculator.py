@@ -51,7 +51,7 @@ def button_clicked():
 button1 = Button(text='Calculate', command=button_clicked)
 button1.pack()
 
-answer = Label(window, text='',font=('Arial',30,'bold'))
+answer = Label(window, text='', font=('Arial',30,'bold'))
 answer.pack()
 
 window.mainloop()
